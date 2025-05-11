@@ -1,4 +1,4 @@
-### Gala projekts
+# Gala projekts
 Programma, kas izmantojot webscraping no ss.lv atrod izdevīgākos dzīvokļus pēc cenas uz m<sup>2</sup> un kopējās platības
 
 # A first-level heading
