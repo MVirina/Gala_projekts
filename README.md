@@ -19,12 +19,13 @@ NEW 1. cena, platiba, links
 12/06/2025 20:30
 ## Izmantotās bibliotēkās
 BeautifulSoup - apraksts
+Requests
 
 ## Datu struktūras programmā
-Kārtošanas
-Salīdzināšanas
+Salīdzināšana
 
 ## Programmatūras izmantošanas metodes
+Var izmantot lai sekoti līdzi dzīvokļu cenām ss.lv, varētu arī strādat uz citiem sludinājuma veidiem izņemot automašīnām (tur būtu nepieciešams modificēt programmas kodu)
 
 # A first-level heading
 ## A second-level heading
