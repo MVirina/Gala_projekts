@@ -18,8 +18,10 @@ NEW 1. cena, platiba, links
 12/06/2025 20:30
 12/06/2025 20:30
 ## Izmantotās bibliotēkās
-BeautifulSoup - apraksts
-Requests
+import requests
+from bs4 import BeautifulSoup
+import schedule
+import time
 
 ## Datu struktūras programmā
 Salīdzināšana
