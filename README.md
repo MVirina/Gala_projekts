@@ -1,22 +1,8 @@
 # Gala projekts
-Programma, kas izmantojot webscraping no ss.lv atrod izdevīgākos dzīvokļus, ko īrēt pēc tā cenas uz m<sup>2</sup> un kopējās platības.
-Tā izvadīs 5.lētākos dzīvokļus pēc cenas uz m<sup>2</sup>, kā arī izvadīs kopējo dzīvokļa platību un sludinājuma saiti.
+Programma, kas izmantojot webscraping no ss.lv parāda izdevīgākos dzīvokļus, ko īrēt pēc tā cenas. Lietotājs ievada to dzīvokļu saites, kuras pašam interesē un tad programma pārbaudīs cenu, un ja dzīvokļa īres cena nokrītas tad terminālī parādas paziņojums. Dzīvokļa cenu programma pārbauda vienu reizi pa dienu, kā arī lai pārbaudītu vai programma strādā tā cenu pārbuda ik pa minūtei.
+Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvokļiem, tad programma to paziņo terminālī
+ 
 
-Ja, programma tiks atkārtoti palaista tā salīdzinās iepriekšējos lētākos dzīvokļus ar tagadējiem un atzīmēs jaunos sludinājumus sarakstā ar vārdu NEW, lai lietotājs zinātu, ka sludinājumu vēl nav apskatījis. 
-Jaunos sludinājumus atradīs salīdzinot pagājša saraksta un jaunā saraksta ievietošanas datumus un laikus. 
-
-NEW 1. cena, platiba, links
-09/04/2025 10:23     
-09/04/2025 10:23   
-09/04/2025 10:23   
-09/04/2025 10:23   
-09/04/2025 10:23   
-
-12/06/2025 20:30 NEW
-09/04/2025 10:23 
-12/06/2025 20:30
-12/06/2025 20:30
-12/06/2025 20:30
 ## Izmantotās bibliotēkās
 import requests
 from bs4 import BeautifulSoup
