@@ -16,31 +16,17 @@ izmanto prieks webscarping
 izmanto prieks programmas atkārtotas darbības
 
 ## Time conplexity
+O(n)?
 
 ## Metodes
 ### split(txt)
-def split(txt):
-    result = ''
-    for char in txt:
-        if char == ' ':
-            break
-        result = result + char
-    return result
-    
+Metode, kura no teksta atdala un atgriež tikai pirmo vārdu, skatoties, kad parādās pirmā atstarpe. Izmantota, lai iegūtu tikai dzīvokļa īres cenu no ss.lv izgūtā cenas lauka "370 €/mēn. (7.55 €/m²)".
 ### checkprice(x)
-def checkprice(x): 
-    global temp_price
-    x = int(x)
-    if x < temp_price:
-        a = x - temp_price
-        temp_price = x
-        return a
-    else:
-        temp_price = x
-        return False
+Metode, kura pārbauda vai dzīvokļa cena ir mainījusies. Tā pirmajā strādāšanas reizē saglabā esošu dzīvokļa cenu, un nākamajās reizēs pārbauda vai tā ir samazinājusies. Ja cena samazinās, tad metode atgriež cenu starpību, pretējā gadījumā False.
 
 ## Programmatūras izmantošanas metodes
 - Var izmantot lai sekoti līdzi dzīvokļu cenām ss.lv.
 - Strādā arī ar citiem sludinājuma veidiem izņemot automašīnām (tur būtu nepieciešams modificēt programmas kodu).
 - Sekot līdzi vai sludinājumam beidzās termiņš vai arī tas tiek izņemts.
+- Pārbaudīt arī vai cena nav palielinājusies, nevis tikai samazinājusies.
 
