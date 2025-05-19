@@ -6,6 +6,15 @@ import time
 parbaude = True
 temp_price = 0
 
+def split(txt):
+    result = ''
+    for char in txt:
+        if char == ' ':
+            break
+        result = result + char
+
+    return result
+
 def checkprice(x): 
     global temp_price
     x = int(x)
@@ -40,8 +49,7 @@ def site_check():
 
         print("Dzīvokļa cena: ", cena_string)
 
-        cena_list = cena_string.split()
-        clean_cena = cena_list[0]
+        clean_cena = split(cena_string)
         check = checkprice(clean_cena)
 
         if check != False:
@@ -64,6 +72,7 @@ while True:
     schedule.run_pending()
 
     if parbaude:
+        clean_cena = 600
         site_check()
 
     time.sleep(60)
