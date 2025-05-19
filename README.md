@@ -10,15 +10,15 @@ Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvo
 - Pievienot iespēju iesniegt vairākus sludinājumus reizē un pārbaudīt vai to cena krītās.
 
 ## Izmantotās bibliotēkās
-# requests un BeautifulSoup
+### requests un BeautifulSoup
 izmanto prieks webscarping
-# schedule un time
+### schedule un time
 izmanto prieks programmas atkārtotas darbības
 
 ## Time conplexity
 
 ## Metodes
-# split(txt)
+### split(txt)
 def split(txt):
     result = ''
     for char in txt:
@@ -27,7 +27,7 @@ def split(txt):
         result = result + char
     return result
     
-# checkprice(x)
+### checkprice(x)
 def checkprice(x): 
     global temp_price
     x = int(x)
