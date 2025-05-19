@@ -12,11 +12,11 @@ Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvo
 
 ## Izmantotās bibliotēkās
 ### requests un BeautifulSoup
-izmanto prieks webscarping
+izmanto prieks webscraping
 ### schedule un time
 izmanto prieks programmas atkārtotas darbības
 
-## Time conplexity
+## Time complexity
 O(n)?
 
 ## Metodes
