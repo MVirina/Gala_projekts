@@ -8,6 +8,7 @@ Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvo
 - Terminālī izvadīt informāciju tikai par cenas nomaiņu.
 - Pielāgot programmu, lai tā strādā ar visiem ss.lv sludinājumiem, tai skaitā automašīnu sludinājumiem.
 - Pievienot iespēju iesniegt vairākus sludinājumus reizē un pārbaudīt vai to cena krītās.
+- Pārbaudīt arī vai cena nav palielinājusies, nevis tikai samazinājusies.
 
 ## Izmantotās bibliotēkās
 ### requests un BeautifulSoup
@@ -28,5 +29,5 @@ Metode, kura pārbauda vai dzīvokļa cena ir mainījusies. Tā pirmajā strād�
 - Var izmantot lai sekoti līdzi dzīvokļu cenām ss.lv.
 - Strādā arī ar citiem sludinājuma veidiem izņemot automašīnām (tur būtu nepieciešams modificēt programmas kodu).
 - Sekot līdzi vai sludinājumam beidzās termiņš vai arī tas tiek izņemts.
-- Pārbaudīt arī vai cena nav palielinājusies, nevis tikai samazinājusies.
+
 
