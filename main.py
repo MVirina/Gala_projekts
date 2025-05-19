@@ -5,6 +5,7 @@ import time
 
 parbaude = True
 temp_price = 0
+#temp_price = 700
 
 def split(txt):
     result = ''
@@ -53,7 +54,8 @@ def site_check():
         check = checkprice(clean_cena)
 
         if check != False:
-            print("Cena ir samazinājusies par", check)
+            print("Cena ir samazinājusies par", check, "€")
+            print("Jaunā dzīvokļa cena", clean_cena,"€/mēn")
         else:
             print("Cena nav mainījusies")
     
@@ -65,14 +67,13 @@ def site_check():
 print('Iekopējiet sludinājuma saiti:')
 adrese = input()
 
-schedule.every().day.at("11:19").do(set_parbaude) #Tagadējais laiks - 3h, jo github strāda UTC time zone
-#schedule.every(1).minutes.do(set_parbaude)
+#schedule.every().day.at("11:19").do(set_parbaude) #Tagadējais laiks - 3h, jo github strāda uz UTC time zone
+schedule.every(1).minutes.do(set_parbaude)
 
 while True:
     schedule.run_pending()
 
     if parbaude:
-        clean_cena = 600
         site_check()
 
     time.sleep(60)
