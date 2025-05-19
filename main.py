@@ -57,8 +57,8 @@ def site_check():
 print('Iekopējiet sludinājuma saiti:')
 adrese = input()
 
-#schedule.every().day.at("00:00").do(set_parbaude)
-schedule.every(1).minutes.do(set_parbaude)
+schedule.every().day.at("11:19").do(set_parbaude) #Tagadējais laiks - 3h, jo github strāda UTC time zone
+#schedule.every(1).minutes.do(set_parbaude)
 
 while True:
     schedule.run_pending()
@@ -66,8 +66,5 @@ while True:
     if parbaude:
         site_check()
 
-
     time.sleep(60)
-
-    
 
