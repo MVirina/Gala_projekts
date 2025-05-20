@@ -4,8 +4,8 @@ import schedule
 import time
 
 parbaude = True
-temp_price = 0
-#temp_price = 700
+#temp_price = 0
+temp_price = 400
 
 def split(txt):
     result = ''
@@ -20,7 +20,7 @@ def checkprice(x):
     global temp_price
     x = int(x)
     if x < temp_price:
-        a = x - temp_price
+        a = temp_price - x
         temp_price = x
         return a
     else:
@@ -68,7 +68,7 @@ print('Iekopējiet sludinājuma saiti:')
 adrese = input()
 
 #schedule.every().day.at("11:19").do(set_parbaude) #Tagadējais laiks - 3h, jo github strāda uz UTC time zone
-schedule.every(1).minutes.do(set_parbaude)
+schedule.every(30).seconds.do(set_parbaude)
 
 while True:
     schedule.run_pending()
