@@ -12,9 +12,9 @@ Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvo
 
 ## Izmantotās bibliotēkās
 ### requests un BeautifulSoup
-izmanto prieks webscraping
+Šīs bibliotēkas izmanto priekš webscraping, lai iegūtu informāciju no interneta
 ### schedule un time
-izmanto prieks programmas atkārtotas darbības
+Šīs programmas izmanto prieks programmas atkārtotas darbības
 
 ## Time complexity
 O(n)?
