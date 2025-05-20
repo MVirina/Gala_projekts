@@ -1,7 +1,7 @@
 # Gala projekts
 Programma, kas izmantojot webscraping no ss.lv parāda vai dzīvokļa cena ir samazinājusies. 
 Lietotājs ievada to dzīvokļa saiti, kura pašam interesē un tad programma vienreiz dienā pārbaudīs vai dzīvokļa cena ir mainījusies. Ja dzīvokļa īres cena nokrītas tad terminālī parādas paziņojums par kādu summu tā ir nokritusies un jauno dzīvokļa cenu. Dzīvokļa cenu programma pārbauda vienu reizi pa dienu, programma strādā ar bezgalīgu while ciklu, kurš strāda ik pa vienai minūtei, gadījumā ja cena nomainās tiek izvadīts paziņojums par cenas maiņu.
-Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvokļiem, tad programma to paziņo terminālī.
+Kā arī ja tiek izņemts lietotāja iesūtītā idzīvokļa sludinājums, tad programma to paziņo terminālī.
 
 # Iespējamie uzlabojumi
 - Informāciju par cenas nomaiņu varētu paziņot atsūtot e-pastu vai ar skaņas paziņojumu.
@@ -17,7 +17,7 @@ Kā arī ja tiek izņemts sludinājums kāds no lietotāja iesūtītajiem dzīvo
 Šīs programmas izmanto prieks programmas atkārtotas darbības
 
 ## Time complexity
-O(n)?
+O(n)
 
 ## Metodes
 ### split(txt)
